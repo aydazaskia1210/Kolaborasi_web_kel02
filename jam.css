@@ -1,0 +1,283 @@
+
+/* ==============================
+   STYLE DASAR
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #f4f8f3;
+    color: #263b2c;
+    line-height: 1.7;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #176b45;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #279b60;
+}
+
+/* ==============================
+   BAGIAN UTAMA
+============================== */
+main {
+    width: 100%;
+    padding: 55px 8%;
+}
+
+main > div {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(37, 94, 55, 0.08);
+    border: 1px solid #e2eee3;
+}
+
+/* ==============================
+   JUDUL
+============================== */
+section h2 {
+    color: #237a43;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #8bc995;
+}
+
+/* ==============================
+   GAMBAR DAN ULASAN PRODUK
+============================== */
+figure {
+    margin-bottom: 35px;
+    background-color: #f1f8f1;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #dcebdd;
+}
+
+figure img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+figcaption {
+    padding: 20px 10px 10px;
+    color: #405747;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* ==============================
+   DAFTAR ALAT, BAHAN, DAN LANGKAH
+============================== */
+section > ol {
+    padding-left: 30px;
+}
+
+section ol {
+    margin-top: 12px;
+}
+
+section li {
+    padding: 6px 0;
+    color: #354b3a;
+}
+
+section > ol > li {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #237a43;
+    font-size: 17px;
+}
+
+section ul {
+    padding-left: 28px;
+    margin-top: 8px;
+}
+
+section ul > li {
+    font-weight: 600;
+    color: #405747;
+    font-size: 15px;
+}
+
+section ul ol {
+    padding-left: 28px;
+}
+
+section ul ol li,
+section ol ol li {
+    font-weight: 400;
+    color: #526456;
+    font-size: 14px;
+}
+
+/* ==============================
+   HOVER EFEK
+============================== */
+figure,
+section {
+    transition: 0.3s ease;
+}
+
+figure:hover {
+    box-shadow: 0 5px 15px rgba(46, 152, 85, 0.12);
+}
+
+/* ==============================
+   RESPONSIVE TABLET
+============================== */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 40px 5%;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
+/* ==============================
+   RESPONSIVE HP
+============================== */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .navbar nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    section {
+        padding: 20px 16px;
+        border-radius: 13px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    figure {
+        padding: 10px;
+    }
+
+    figure img {
+        max-height: 300px;
+    }
+
+    figcaption {
+        font-size: 14px;
+        padding: 15px 5px 5px;
+    }
+
+    section > ol {
+        padding-left: 23px;
+    }
+
+    section > ol > li {
+        font-size: 15px;
+    }
+
+    section ul {
+        padding-left: 20px;
+    }
+}
+.subject {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.subject td {
+    border: none;
+    width: 50%;
+    vertical-align: top;
+}
+
+.tab {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tab td {
+    padding: 8px;
+    border: none;
+}
